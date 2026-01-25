@@ -1,0 +1,14 @@
+class Solution {
+  public:
+    void reverseArray(vector<int> &arr) 
+    {
+        int n=arr.size();
+        vector<int> arr2(n);
+        arr2=arr;
+        int count=arr.size()-1;
+        for(int i=0;i<arr2.size();i++)
+        {
+            arr[count--]=arr2[i];
+        }
+    }
+};
